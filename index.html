@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Figmatelier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font Yeseva One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- fin font Yeseva One -->
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fin favicon -->
+
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+	<defs>
+		<filter id="goo">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+			<feComposite in="SourceGraphic" in2="goo" operator="atop" />
+		</filter>
+	</defs>
+    </svg>
+    <header>
+	<div class="logo">
+	    <a href="">
+		<img src="img/logo-figmatelier.svg" alt="">
+	    </a>
+	</div>
+	<div class="content-menu">
+	    <div class="menu"> 
+		<span class="iconify icon-menu--hover" data-icon="dashicons:menu-alt" data-width="36"></span>
+		<span class="iconify icon-menu" data-icon="dashicons:menu" data-width="36"></span>
+	    </div>
+	</div>
+    </header>
+    <div class="profile">
+	<div class="profile-header">
+	    <div class="profile-logo">
+		<a href="">
+		    <img src="img/logo-figmatelier-false.svg" alt="">
+		</a>
+	    </div>
+	    <div class="profile-cancel">
+		<span class="iconify icon-cancel" data-icon="iconoir:cancel" data-width="36"></span>
+	    </div>
+	</div>
+	<nav class="profile-nav">
+	    <div>
+		<ul>
+		    <li>NAVIGATION</li>
+		    <li><a href="">Home</a></li>
+		    <li><a href="http://jannis-smesny.com/wp-content/uploads/2021/09/CV_JANNIS_SMESNY.pdf">Profile</a></li>
+		</ul>
+	    </div>
+	    <div>
+		<ul>
+		    <li>PROJECTS</li>
+		    <li><a href="https://www.figma.com/community/file/1008319649904791406" target="_blank">Meiso</a></li>
+		    <li><a href="https://www.figma.com/community/file/1041027633094592625" target="_blank">Hot Hippie</a></li>
+		    <li><a href="https://www.figma.com/community/file/1028723803649233763" target="_blank">Boobs</a></li>
+		    <li><a href="https://www.figma.com/community/file/1026380532643466683" target="_blank">Figmatelier</a></li>
+		</ul>
+	    </div>
+	</nav>
+    </div>
+    <main class="main">
+	<div class="animation-esfera1"></div>
+	<div class="animation-circle1"></div>
+	<div class="animation-circle2"></div>
+	<div class="animation-circle3"></div>
+	<div class="portada">
+	    <p class="saludo">&#129304; HELLO, I'M JANNIS SMESNY AKA FOX</p>
+	    <p class="presentacion">I'm a <span>Product Designer</span>. I have been designing digital solution for the last <span>ten years</span>. During which I have worked for corporate groups to small businesses such as Freeview, McDonald's, Supercell, Old El Paso, Lancôme...</p>
+	</div>
+	<div class="animation-esfera2"></div>
+	<div class="selected">
+	    Selected Projects
+	</div>
+	<div class="proyectos proyectos01">
+	    <div id="meiso" class="proyecto proyecto01 proyecto-meiso">
+		<a class="image" href="https://www.figma.com/community/file/1008319649904791406">
+		    <img src="img/meiso.png" alt="figmatelier eyes">
+		    <div class="image-fondo"></div>
+		</a>
+		<div class="concept">
+		    <div class="concept-fondo"></div>
+		    <div class="concept-number">
+			<span>0</span><span>1</span>
+		    </div>
+		    <div class="concept-title">
+			<a href="#">Meiso</a>
+			<span>UI/UX-iOS App</span>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div class="proyectos proyectos02">
+	    <div id="sauce" class="proyecto proyecto02 proyecto-sauce">
+		<a class="image" href="https://www.figma.com/community/file/1041027633094592625">
+		    <img src="img/sauce.png" alt="figmatelier eyes">
+		    <div class="image-fondo"></div>
+		</a>
+		<div class="concept">
+		    <div class="concept-fondo"></div>
+		    <div class="concept-number">
+			<span>0</span><span>2</span>
+		    </div>
+		    <div class="concept-title">
+			<a href="#">Hot Hippie</a>
+			<span>UI/UX-website</span>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div class="proyectos proyectos01">
+	    <div id="boobs" class="proyecto proyecto01 proyecto-boobs">
+		<a class="image" href="https://www.figma.com/community/file/1028723803649233763">
+		    <img src="img/boobs.png" alt="figmatelier eyes">
+		    <div class="image-fondo"></div>
+		</a>
+		<div class="concept">
+		    <div class="concept-fondo"></div>
+		    <div class="concept-number">
+			<span>0</span><span>3</span>
+		    </div>
+		    <div class="concept-title">
+			<a href="#">Boobs</a>
+			<span>UI/UX-App</span>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="walking" class="proyectos proyectos02 proyecto-walking">
+	    <div class="proyecto proyecto02">
+		<a class="image" href="https://www.figma.com/community/file/1026380532643466683">
+		    <img src="img/walking.png" alt="figmatelier eyes">
+		    <div class="image-fondo"></div>
+		</a>
+		<div class="concept">
+		    <div class="concept-fondo"></div>
+		    <div class="concept-number">
+			<span>0</span><span>4</span>
+		    </div>
+		    <div class="concept-title">
+			<a href="#">Figmatelier</a>
+			<span>Workshops</span>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </main>
+    <footer class="contacto">
+	<div>Let's connect</div>
+	<div class="redes">
+	    <div>
+		<div>
+		    <span class="iconify" data-icon="clarity:document-line" data-width="36"></span>
+		    <a href="http://jannis-smesny.com/wp-content/uploads/2021/09/CV_JANNIS_SMESNY.pdf" target="_blank">Resume</a>
+		</div>
+		<div>
+		    <span class="iconify" data-icon="ic:round-email" data-width="36"></span>
+		    <a href="#">Email</a>
+		</div>
+	    </div>
+	    <div>
+		<div>
+		    <span class="iconify" data-icon="akar-icons:linkedin-box-fill" data-width="36"></span>
+		    <a href="https://www.linkedin.com/in/yannissmesny/" target="_blank">Linkedin</a>
+		</div>
+		<div>
+		    <span class="iconify" data-icon="icon-park-outline:figma" data-width="36"></span>
+		    <a href="https://www.figma.com/@figmatelier" target="_blank">Figma</a>
+		</div>
+	    </div>
+	</div>
+    </footer>
+
+
+
+    <!--svg va al inicio y el div#cursor va al final junto a script-->
+    <div id="cursor" class="Cursor">
+    </div>
+    <script src="cursor.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
